@@ -16,17 +16,32 @@ Run Qwen2.5-Omni-7B with ipex-llm on Intel platform
   conda activate llm-pt26
   pip install --pre --upgrade ipex-llm[xpu_2.6_arl] --extra-index-url https://pytorch-extension.intel.com/release-whl/stable/arl/cn/ </pre>
 
-跟新模型相关需求
+更新模型相关需求
   <pre> 
   pip install git+https://github.com/huggingface/transformers@f742a644ca32e65758c3adb36225aef1731bd2a8
   pip install accelerate==1.5.2
   pip install qwen-omni-utils 
   pip install pandas </pre>
 
-设置环境变量：
+设置环境变量（for ARL-H)：
   <pre> 
   set SYCL_CACHE_PERSISTENT=1
   set SYCL_PI_LEVEL_ZERO_USE_IMMEDIATE_COMMANDLISTS=1 </pre>
+
+安装ffmpeg
+  <pre> 
+  conda install -c conda-forge ffmpeg </pre>
+
+到这里可以运行generate.py脚本初步体验
+python generate.py
+
+以下是使用Gradio接口需要额外安装的依赖:
+<pre> 
+pip install -r requirements_web_demo.txt </pre>
+
+运行Gradio 界面demo：
+<pre> 
+python web_demo.py </pre>
   
 
 
