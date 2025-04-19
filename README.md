@@ -33,15 +33,20 @@ Run Qwen2.5-Omni-7B with ipex-llm on Intel platform
   conda install -c conda-forge ffmpeg </pre>
 
 到这里可以运行generate.py脚本初步体验
-python generate.py
+<pre> 
+python generate.py</pre>
 
-以下是使用Gradio接口需要额外安装的依赖:
+同样也可以运行cookbooks目录下的不同场景。
+
+如果要是使用Gradio界面充分体验，需要额外安装的依赖:
 <pre> 
 pip install -r requirements_web_demo.txt </pre>
 
 运行Gradio 界面demo：
 <pre> 
 python web_demo.py </pre>
+
+整个运行中视频文件分析很容易爆显存，请注意选择合适的视频长度。
   
 
 
