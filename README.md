@@ -28,11 +28,10 @@ Run Qwen2.5-Omni-7B with ipex-llm on Intel platform
   set SYCL_CACHE_PERSISTENT=1
   set SYCL_PI_LEVEL_ZERO_USE_IMMEDIATE_COMMANDLISTS=1 </pre>
 
-安装ffmpeg
-  <pre> 
-  conda install -c conda-forge ffmpeg </pre>
+安装ffmpeg, windows 平台请下载ffmpeg，并配置环境变量，将 FFmpeg 的 bin 目录路径添加到系统的环境变量中，以便在命令行中使用
+https://www.gyan.dev/ffmpeg/builds/
 
-到这里可以运行generate.py脚本初步体验
+到这里，环境中可以运行generate.py脚本初步体验
 <pre> 
 python generate.py</pre>
 
@@ -47,6 +46,13 @@ pip install -r requirements_web_demo.txt </pre>
 python web_demo.py </pre>
 
 整个运行中视频文件分析很容易爆显存，请注意选择合适的视频长度。
-  
+
+参考网站：
+
+
+[ipex-llm pytorch2.6 installation](https://github.com/intel/ipex-llm/blob/main/docs/mddocs/Quickstart/install_pytorch26_gpu.md)
+
+
+[Qwen2.5-omni](https://github.com/QwenLM/Qwen2.5-Omni)
 
 
