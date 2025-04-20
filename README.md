@@ -1,8 +1,8 @@
 # Qwen2.5-Omni-7B
-Run Qwen2.5-Omni-7B with ipex-llm on Intel platform
+本指南介绍了如何在 Intel 平台上使用 ipex-llm 运行 Qwen2.5-Omni-7B 模型。
 
 # 模型下载
-推荐使用魔搭下载到本地Qwen2.5-Omni-7B 目录
+推荐使用魔搭，下载模型，并放到本地Qwen2.5-Omni-7B 目录
 
 # 环境搭建
 推荐使用minconda或者anaconda创建虚拟环境，请选择合适的ipex-llm安装指令
